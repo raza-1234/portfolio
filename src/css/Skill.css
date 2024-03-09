@@ -1,0 +1,55 @@
+.portfolio_skill-wrapper {
+    margin: 0px auto;
+    max-width: 90%;
+    padding: 1rem 2rem;
+}
+
+.portfolio_skill-wrapper h2{
+    color: yellow;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.portfolio_skill_info {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+}
+
+.portfolio_skill-img-wrapper {
+    background-color: white;
+    border-radius: 50%;
+    max-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portfolio_skill-img-wrapper img {
+    width: 50px;
+}
+
+.portflio_skill h3 {
+    margin: 20px 0px;
+    text-transform: capitalize;
+}
+
+.portflio_skill {
+    padding: 10px;
+}
+
+.portflio_skill:hover  {
+    border-bottom: 2px solid yellow;
+}
+
+.portfolio_skill-description {
+    text-align: left;
+    line-height: 25px;
+    padding: 5px 0px;
+}
+
