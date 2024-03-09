@@ -1,6 +1,6 @@
 import "../css/Hero.css";
 import React from "react";
-import pic from "../assets/pic2.png";
+import pic from "../assets/pic3.png";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
         <button className="portfolio-hire-me-btn">Hire ME</button>
       </div>
       <div className="portfolio_img-content">
-        <img src={pic} alt="ahmed's pic"/>
+        <img src={pic} alt="ahmed raza"/>
       </div>
     </div>
   );
