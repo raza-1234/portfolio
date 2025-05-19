@@ -1,55 +1,60 @@
 .portfolio_hero-section {
-    height: calc(100vh - 4rem);
-    display: flex;
-    max-width: 90%;
-    padding: 1rem 2rem;
-    margin: 0 auto;
-    column-gap: 5rem;
-} 
+  height: calc(100vh - 4rem);
+  display: flex;
+  max-width: 90%;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  column-gap: 5rem;
+  font-family: "Poetsen One", sans-serif;
+}
 
 .portfolio_text-content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    text-transform: capitalize;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.portfolio_text-content h1 {
+  font-size: 50px;
 }
 
 .portfolio_greetings {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .portfolio_decription {
-    text-transform: lowercase;
-    margin-top: 10px;
-    line-height: 20px;
-    word-spacing: 5px
+  text-transform: lowercase;
+  margin-top: 10px;
+  line-height: 20px;
+  word-spacing: 5px;
+  font-size: 19px;
 }
 
 .portfolio_name {
-    color: yellow;
+  color: yellow;
 }
 
 .portfolio-hire-me-btn {
-    border: 1px solid yellow;
-    color: white;
-    width: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    cursor: pointer;
+  border: 1px solid yellow;
+  color: white;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .portfolio_img-content {
-    width: 50%;
-    display: flex;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .portfolio_img-content img {
-    object-fit: contain;
-    width: 100%;
-    height: 70%;
+  object-fit: contain;
+  width: 100%;
+  height: 70%;
 }
-
