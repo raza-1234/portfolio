@@ -9,22 +9,38 @@
   z-index: 3;
   top: 0;
   height: 4rem;
+  background-color: Black;
+}
+
+.portfolio_navbar h2 {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+}
+
+.portfolio_desktop-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .portfolio_desktop-menu-item {
   padding: 10px;
+  color: white;
 }
 
-.portfolio_desktop-menu-item:hover{
-    color: yellow;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid yellow;
-    cursor: pointer;
+.portfolio_desktop-menu-item:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.portfolio_desktop-menu-item:focus {
+  color: yellow;
 }
 
 .portfolio_desktop-menu-btn {
-    cursor: pointer;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px
+  color: rgb(255, 255, 0);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
 }

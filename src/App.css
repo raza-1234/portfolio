@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.main-background{
+  background-color: black;
+  font-family: "Archivo", sans-serif;
+}

@@ -1,25 +1,48 @@
-import "../css/NavBar.css"
+import "../css/NavBar.css";
 
-import React from 'react';
-import { Link } from 'react-scroll';
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
+  const navLinks = ['Home', 'About'];
+
+  const [activeLink, setActiveLink] = useState('');
+
+  const vistedLink = (value) => {
+    setActiveLink(value);
+  }
   return (
     <nav className="portfolio_navbar">
-      {/* <img src="" alt="logo" /> */}
-      <h2>porTFolio</h2>
+      <h2>PortFolio</h2>
       <div className="portfolio_desktop-menu">
-        <Link className="portfolio_desktop-menu-item">Home</Link>
-        <Link className="portfolio_desktop-menu-item">About</Link>
-        <Link className="portfolio_desktop-menu-item">Portfolio</Link>
-        <Link className="portfolio_desktop-menu-item">Clients</Link>
+        <a 
+          className={`portfolio_desktop-menu-item`} 
+          href="#Hero" 
+          onClick={() => vistedLink('Home')}
+        >
+          Home
+        </a>
+        <a className="portfolio_desktop-menu-item" href="#About">
+          About
+        </a>
+        <a className="portfolio_desktop-menu-item" href="#Services">
+          Services
+        </a>
+        <a className="portfolio_desktop-menu-item" href="#Skills">
+          Skills
+        </a>
+        <a className="portfolio_desktop-menu-item" href="#Portfolio">
+          Portfolio
+        </a>
+        <a className="portfolio_desktop-menu-item" href="#Clients">
+          Clients
+        </a>
+        <a className="portfolio_desktop-menu-item" href="#Contact">
+          <p className="portfolio_desktop-menu-btn">Contact Me</p>
+        </a>
       </div>
-      <button className="portfolio_desktop-menu-btn">
-        <img src="" alt="" className="portfolio_desktop-menu-img" />
-        Contact Me
-      </button>
     </nav>
   );
-}
+};
 
-export default NavBar
+export default NavBar;
